@@ -40,7 +40,6 @@ Key Components:
 /media-stream: WebSocket endpoint for real-time audio exchange between Twilio and OpenAI.
 initialize_session: Configures the OpenAI Realtime API session with system prompts and audio settings.
 receive_from_twilio & send_to_twilio: Manage audio data flow and handle interruptions (e.g., when the user starts speaking).
-Notes
 Twilio Setup: Ensure your Twilio account is configured with a phone number and webhook pointing to /incoming-call.
 OpenAI API: The application uses the gpt-4o-realtime-preview-2024-10-01 model. Ensure your API key has access to this model.
 Ngrok: Required for testing locally, as Twilio needs a public URL for WebSocket connections.
