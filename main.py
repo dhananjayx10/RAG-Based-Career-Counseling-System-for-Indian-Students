@@ -160,7 +160,7 @@ async def handle_media_stream(websocket: WebSocket):
                 print(f"Error in send_to_twilio: {e}")
 
         async def handle_speech_started_event():
-            """Handle interruption when the caller's speech starts."""
+            """ Handle interruption when the caller's speech starts."""
             nonlocal response_start_timestamp_twilio, last_assistant_item
             print("Handling speech started event.")
             if mark_queue and response_start_timestamp_twilio is not None:
